@@ -58,9 +58,8 @@ const BookingForm = () => {
         name="service"
       >
         <option value="">Select Service</option>
-        <option value="Service 1">Service 1</option>
-        <option value="Service 2">Service 2</option>
-        <option value="Service 3">Service 3</option>
+        <option value="Service 1">car service</option>
+        <option value="Service 2">Ac</option>
       </select>
       <input
         type="date"
