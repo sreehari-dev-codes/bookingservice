@@ -8,12 +8,12 @@ connectDB();
 
 app.use(
   cors({
-    origin: "http://localhost:5173", // Replace with your frontend URL
+    origin: "http://localhost:5173", 
     optionsSuccessStatus: 200,
   })
 );
 app.use(express.json());
-app.use("/api",bookings); // Prefix all routes with '/api'
+app.use("/api",bookings); 
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

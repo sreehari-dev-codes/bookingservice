@@ -7,17 +7,17 @@ function BookingList() {
   useEffect(() => {
     const fetchBookings = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/services"); // API call
+        const response = await axios.get("http://localhost:5000/api/services");
         console.log(response.data, "kkk");
-        setBookings(response.data); // Set the state with fetched data
+        setBookings(response.data); 
       } catch (error) {
         console.error("Failed to fetch bookings:", error);
-        setBookings([]); // Set to an empty array on error
+        setBookings([]); 
       }
     };
 
     fetchBookings();
-  }, []); // Empty dependency array ensures it runs only on mount
+  }, []); 
 
   return (
     <div>
